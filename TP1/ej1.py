@@ -1,10 +1,12 @@
-marcas = []
-modelos = []
-puertas = []
+def mayor_de_tres (num1: int, num2: int, num3: int) -> int:
+    lista = [num1, num2, num3]
+    mayor = max(lista)
+    return mayor
 
-autos1 = [marcas, modelos, puertas]
-autos2 = [[], [], []]
+num1 = 4
+num2 = 90
+num3 = 9
 
-# Son matrices iguales o hay diferencias?
-print(autos1, id(autos1))
-print(autos2, id(autos2))
+
+mayores = mayor_de_tres(num1, num2, num3)
+print(mayores)
