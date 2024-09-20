@@ -7,14 +7,17 @@ def registrar_listado():
         if n_afiliado == -1:
             print("Saliendo...")
             break
-            
-        paciente = int(input("Ingrese 0 por urgencia o 1 por turno: "))
-        if paciente == 0:
-            urgencia.append(n_afiliado)
-        elif paciente == 1:
-            turno.append(n_afiliado)
+        
+        if n_afiliado >= 1000 and n_afiliado <= 9999:
+            paciente = int(input("Ingrese 0 por urgencia o 1 por turno: "))
+            if paciente == 0:
+                urgencia.append(n_afiliado)
+            elif paciente == 1:
+                turno.append(n_afiliado)
+            else:
+                print("Opción no válida. Intente de nuevo.")
         else:
-            print("Opción no válida. Intente de nuevo.")
+            print("Numero invalido. Deben ser 4 digitos")
     
     return urgencia, turno
 
