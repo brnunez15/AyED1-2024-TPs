@@ -14,7 +14,6 @@ def gen_matriz_a(matriz):
 def main():
     numero = int(input("Ingrese un numero para las filas y columnas: "))
     matriz_gral = gen_matriz(numero)
-    print(matriz_gral)
     matriz_a = gen_matriz_a(matriz_gral)
     print(matriz_a)
 
